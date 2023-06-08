@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Index', ['title' => 'Inertia App', 'posts' => DB::table('posts')->get()]);
+    return Inertia::render('Test');
+    // return Inertia::render('Index', ['title' => 'Inertia App', 'posts' => DB::table('posts')->get()]);
 });
